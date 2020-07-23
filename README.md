@@ -1,6 +1,6 @@
 # UMD Libraries Theme
 
-UMD Libraries is a child theme based of the UMD Terp theme currently in development by the UMD Libraries.
+UMD Libraries is a child theme based of the UMD Terp theme.
 
 More information:
 
