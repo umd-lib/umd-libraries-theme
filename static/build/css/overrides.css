@@ -12,3 +12,14 @@
   font-weight: 300;
   font-size: 1.1rem;
 }
+
+/** For Announcement block in sidebar **/ 
+.announcement h2 {
+	font-family: Source Sans Pro, sans-serif;
+  font-size: 1.85rem;
+  font-weight: 600;
+}
+.announcement {
+  border-left: 2px solid #e21833;
+	padding: 20px 10px 10px 10px;
+}
