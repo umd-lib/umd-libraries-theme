@@ -14,14 +14,12 @@
 }
 
 /** For Announcement block in sidebar **/ 
-#block-announcement h2 {
+.announcement h2 {
 	font-family: Source Sans Pro, sans-serif;
   font-size: 1.85rem;
   font-weight: 600;
 }
-#block-announcement div {
-    border-left: 2px solid #e21833;
-}
-#block-announcement .content {
-    padding: 20px 10px 10px 10px;
+.announcement {
+  border-left: 2px solid #e21833;
+	padding: 20px 10px 10px 10px;
 }
