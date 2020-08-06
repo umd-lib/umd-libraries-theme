@@ -13,6 +13,12 @@
   font-size: 1.1rem;
 }
 
+.form-select {
+  background-image: url('../../src/img/select-arrows.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 /** For Announcement block in sidebar **/ 
 .announcement h2 {
 	font-family: Source Sans Pro, sans-serif;
