@@ -19,6 +19,10 @@
   background-repeat: no-repeat;
 }
 
+.hero-attribution {
+  padding: 0rem 7.5rem;
+}
+
 /** For Announcement block in sidebar **/ 
 .announcement h2 {
 	font-family: Source Sans Pro, sans-serif;
