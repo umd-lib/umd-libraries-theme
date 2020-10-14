@@ -29,7 +29,62 @@
   font-size: 1.85rem;
   font-weight: 600;
 }
+
 .announcement {
-  border-left: 2px solid #e21833;
-	padding: 20px 10px 10px 10px;
+  border-left: 3px solid #e21833;
+  padding: 10px 10px 10px 15px;
+  margin: 20px 0;
+}
+
+blockquote {
+  padding: 14px 28px;
+  border-left: 5px solid #e21833;
+}
+
+#views-exposed-form-solr-search-content-page-1 #edit-keys {
+  display: inline;
+}
+
+#views-exposed-form-solr-search-content-page-1 .form-item-keys {
+  display: inline;
+}
+
+#views-exposed-form-solr-search-content-page-1 .form-actions {
+  padding-top: 10px;
+}
+
+#views-exposed-form-solr-search-content-page-1 #edit-submit-solr-search-content {
+  font-weight: normal;
+  color: white;
+  background-color: #e21833;
+  border: 2px solid #e21833;
+  display: inline-block;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#views-exposed-form-solr-search-content-page-1 #edit-submit-solr-search-content:hover {
+  font-weight: 500;
+  color: #fff;
+  background-color: #222;
+  border: 2px solid #222;
+}
+
+/** for external link icon **/
+svg.ext {
+  width: 22px;
+  height: 22px;
+  padding-right: 0;
+  margin-left: 2px;
+  fill: #e21833;
+}
+
+img, svg {
+  vertical-align: baseline;
+}
+
+svg.ext path, svg.mailto path {
+  stroke: #e21833;
+  stroke-width: 3;
 }

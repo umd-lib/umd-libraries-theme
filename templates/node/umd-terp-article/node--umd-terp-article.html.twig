@@ -33,7 +33,7 @@
 {% if content.body|field_value %}
   <div class="section">
     {% if "On" in content.field_float_image_right.0 %}
-      <div class="float-right">
+      <div class="float-right" style="margin-left: 10px;">
         <img src="{{ file_url(content.field_umdt_ct_article_image[0]['#media'].field_media_image.entity.uri.value | image_style('optimized')) }}" alt="{{ content.field_umdt_ct_article_image[0]['#media'].field_media_image.alt }}" />
       </div>
     {% endif %}
