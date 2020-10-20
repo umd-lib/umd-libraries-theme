@@ -2,6 +2,6 @@ global:
   version: VERSION
   css:
     base:
-     static/build/css/overrides.css: {}
+     static/custom/css/overrides.css: {}
   js:
-    static/build/js/overrides.js: {}
+    static/custom/js/overrides.js: {}

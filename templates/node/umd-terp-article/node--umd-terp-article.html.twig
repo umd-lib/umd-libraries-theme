@@ -13,22 +13,30 @@
 </div>
 
 {% if content.field_umdt_ct_article_image|field_value %}
-  <div class="section section-ut_image">
-    <div class="image-bg">
-      <figure>
-        <div class="image-media">
-          <img src="{{ file_url(content.field_umdt_ct_article_image[0]['#media'].field_media_image.entity.uri.value | image_style('optimized')) }}" alt="{{ content.field_umdt_ct_article_image[0]['#media'].field_media_image.alt }}" />
-        </div>
-        {% if content.field_umdt_ct_article_caption|field_value %}
-          <figcaption>{{ content.field_umdt_ct_article_caption|field_value }}</figcaption>
-        {% endif %}
-      </figure>
+  {% if "On" in content.field_float_image_right.0 %}
+  {% else %}
+    <div class="section section-ut_image">
+      <div class="image-bg">
+        <figure>
+          <div class="image-media">
+            <img src="{{ file_url(content.field_umdt_ct_article_image[0]['#media'].field_media_image.entity.uri.value | image_style('optimized')) }}" alt="{{ content.field_umdt_ct_article_image[0]['#media'].field_media_image.alt }}" />
+          </div>
+          {% if content.field_umdt_ct_article_caption|field_value %}
+            <figcaption>{{ content.field_umdt_ct_article_caption|field_value }}</figcaption>
+          {% endif %}
+        </figure>
+      </div>
     </div>
-  </div>
+  {% endif %}
 {% endif %}
 
 {% if content.body|field_value %}
   <div class="section">
+    {% if "On" in content.field_float_image_right.0 %}
+      <div class="float-right" style="margin-left: 10px;">
+        <img src="{{ file_url(content.field_umdt_ct_article_image[0]['#media'].field_media_image.entity.uri.value | image_style('optimized')) }}" alt="{{ content.field_umdt_ct_article_image[0]['#media'].field_media_image.alt }}" />
+      </div>
+    {% endif %}
     <div class="editor-content">
       {{ content.body|field_value }}
     </div>
