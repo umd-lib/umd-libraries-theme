@@ -16,10 +16,10 @@
           <strong>{{ site_name }}</strong><br>
           <span>{{ umd_terp_address }} </span><br>
           {% if umd_terp_phone %}
-            <span aria-hidden="true">&nbsp;·&nbsp;</span><a href="tel:+{{ umd_terp_phone|preg_replace('/[^0-9]/', '') }}">{{ umd_terp_phone }}</a>
+            <a href="tel:+{{ umd_terp_phone|preg_replace('/[^0-9]/', '') }}">{{ umd_terp_phone }}</a><br />
           {% endif %}
           {% if umd_terp_email %}
-            <span aria-hidden="true">&nbsp;·&nbsp;</span><a href="mailto:{{ umd_terp_email }}">{{ umd_terp_email }}</a>
+            <a href="mailto:{{ umd_terp_email }}">{{ umd_terp_email }}</a>
           {% endif %}
         </div>
         {% if hide_social_icons != TRUE %}
