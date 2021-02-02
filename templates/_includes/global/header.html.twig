@@ -7,7 +7,11 @@
 <header class="{{ header_classes|join(' ') }}">
   <div class="max-bound">
     <nav class="navbar navbar-expand-800" aria-label="Main">
-      <a class="navbar-brand" href="{{ path('<front>') }}">
+      {% if override_site_logo_link %}
+        <a class="navbar-brand" href="https://www.lib.umd.edu/">
+      {% else %}
+        <a class="navbar-brand" href="{{ path('<front>') }}">
+      {% endif %}
         {% if logo_path %}
           <img src="{{ logo_path }}" alt="{{ site_name }} logo">
         {% else %}
@@ -19,7 +23,11 @@
           </span>
         {% endif %}
         {% if show_digital_branding %}
-          <span class="brand">Digital Collections</span>
+          {% if add_digital_branding_link %}
+            <a href="https://digital.lib.umd.edu" aria-label="Digital Content from the University of Maryland’s Libraries" class="brand">Digital Collections</a>
+          {% else %}
+            <span class="brand">Digital Collections</span>
+          {% endif %}
         {% endif %}
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-offcanvas" aria-controls="navbar-offcanvas" aria-expanded="false" aria-label="Toggle navigation">
