@@ -29,6 +29,38 @@ function umd_libraries_form_system_theme_settings_alter(&$form, FormStateInterfa
     '#description' => t('Display the Digital Collections text alongside the library logo.'),
     '#default_value' => theme_get_setting('show_digital_branding'),
   ];
+  $form['umd_libraries_header_settings']['add_digital_branding_link'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Link Digital'),
+    '#description' => t('Link Digital header to digital.lib.umd.edu.'),
+    '#default_value' => theme_get_setting('add_digital_branding_link'),
+  ];
+  $form['umd_libraries_header_settings']['override_site_logo_link'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Override Site Link'),
+    '#description' => t('Override site link to www.lib.umd.edu.'),
+    '#default_value' => theme_get_setting('override_site_logo_link'),
+  ];
+
+  // Footer.
+  $form['umd_libraries_footer_settings'] = [
+    '#type' => 'details',
+    '#title' => t('UMD Libraries Footer Settings'),
+  ];
+  $form['umd_libraries_footer_settings']['replace_email_text'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Replace Email Text'),
+    '#description' => t('Replace email address text with Contact Us'),
+    '#default_value' => theme_get_setting('replace_email_text'),
+  ];
+  $form['umd_libraries_footer_settings']['exclude_mailto'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Exclude Mailto'),
+    '#description' => t('Exclude MAILTO for email field--for example, if a URL.'),
+    '#default_value' => theme_get_setting('exclude_mailto'),
+  ];
+
+
 
 }
 
