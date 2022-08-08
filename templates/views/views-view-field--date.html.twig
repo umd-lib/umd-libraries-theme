@@ -19,5 +19,5 @@
  */
 #}
 {% if output %}
-  {{ output|date("M d, Y") }}
+  {{ output|replace({' -': ''})|date("M d, Y") }}
 {% endif %}
