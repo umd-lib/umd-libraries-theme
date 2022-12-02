@@ -3,7 +3,7 @@
  */
 .brand {
   color: #000;
-  padding-left: 20px;
+  padding-left: 5px;
   font-size: 34px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -87,4 +87,9 @@ img, svg {
 svg.ext path, svg.mailto path {
   stroke: #e21833;
   stroke-width: 3;
+}
+
+a.navbar-brand img {
+  height: 75px;
+  margin-top: 10px;
 }
