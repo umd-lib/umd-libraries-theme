@@ -59,8 +59,11 @@ function umd_libraries_form_system_theme_settings_alter(&$form, FormStateInterfa
     '#description' => t('Exclude MAILTO for email field--for example, if a URL.'),
     '#default_value' => theme_get_setting('exclude_mailto'),
   ];
-
-
-
+  $form['umd_libraries_footer_settings']['link_footer_logo'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Link Footer Logo'),
+    '#description' => t('This will link to public website.'),
+    '#default_value' => theme_get_setting('link_footer_logo'),
+  ];
 }
 
